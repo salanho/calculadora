@@ -1,0 +1,30 @@
+module mux16(
+input [15:0] Dado,
+input [3:0] Escolha,
+output [2:0] Saida
+);
+assign Dado[0]= Escolha==4'd0 ? Saida : 1'b0;
+assign Dado[1]= Escolha==4'd1 ? Saida : 1'b0;
+assign Dado[2]= Escolha==4'd2 ? Saida : 1'b0;
+assign Dado[3]= Escolha==4'd3 ? Saida : 1'b0;
+assign Dado[4]= Escolha==4'd4 ? Saida : 1'b0;
+assign Dado[5]= Escolha==4'd5 ? Saida : 1'b0;
+assign Dado[6]= Escolha==4'd6 ? Saida : 1'b0;
+assign Dado[7]= Escolha==4'd7 ? Saida : 1'b0;
+assign Dado[8]= Escolha==4'd8 ? Saida : 1'b0;
+assign Dado[9]= Escolha==4'd9 ? Saida : 1'b0;
+
+assign Dado[10]= Escolha==4'd10 ? Saida : 1'b1;
+assign Dado[11]= Escolha==4'd11 ? Saida : 1'b1;
+assign Dado[12]= Escolha==4'd12 ? Saida : 1'b1;
+assign Dado[14]= Escolha==4'd14 ? Saida : 1'b0;
+assign Dado[15]= Escolha==4'd15 ? Saida : 1'b0;
+
+
+assign Dado[13]= Escolha==4'd13 ? Saida : 1'b2;
+
+
+
+
+
+endmodule

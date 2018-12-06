@@ -1,0 +1,19 @@
+module conversor_teste(
+input A[3:0], 
+input switch,
+output saida1[3..0],
+output saida2[3..0]
+);
+always @(*)
+if(~switch)
+	begin
+		saida1 = A;
+	end
+if(switch)
+	begin	
+		saida2 = A;
+	end
+	
+endmodule
+
+	

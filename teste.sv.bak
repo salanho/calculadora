@@ -1,0 +1,507 @@
+module SOMA (A, B, S);
+input [3:0] A;
+input [7:0] B;
+output [6:0] S;
+always @(*)
+begin
+    if(A == 4'b0000) begin
+        if(B == 4'b0000) begin
+            S = 0000000;
+        end
+    end
+    if(A == 4'b0001) begin
+        if(B == 4'b0000) begin
+            S = 0000001;
+        end
+    end
+    if(A == 4'b0010) begin
+        if(B == 4'b0000) begin
+            S = 0000010;
+        end
+    end
+    if(A == 4'b0011) begin
+        if(B == 4'b0000) begin
+            S = 0000011;
+        end
+    end
+    if(A == 4'b0100) begin
+        if(B == 4'b0000) begin
+            S = 0000100;
+        end
+    end
+    if(A == 4'b0101) begin
+        if(B == 4'b0000) begin
+            S = 0000101;
+        end
+    end
+    if(A == 4'b0110) begin
+        if(B == 4'b0000) begin
+            S = 0000110;
+        end
+    end
+    if(A == 4'b0111) begin
+        if(B == 4'b0000) begin
+            S = 0000111;
+        end
+    end
+    if(A == 4'b1000) begin
+        if(B == 4'b0000) begin
+            S = 0001000;
+        end
+    end
+    if(A == 4'b1001) begin
+        if(B == 4'b0000) begin
+            S = 0001001;
+        end
+    end
+    if(A == 4'b0000) begin
+        if(B == 4'b0001) begin
+            S = 0000001;
+        end
+    end
+    if(A == 4'b0001) begin
+        if(B == 4'b0001) begin
+            S = 0000010;
+        end
+    end
+    if(A == 4'b0010) begin
+        if(B == 4'b0001) begin
+            S = 0000011;
+        end
+    end
+    if(A == 4'b0011) begin
+        if(B == 4'b0001) begin
+            S = 0000100;
+        end
+    end
+    if(A == 4'b0100) begin
+        if(B == 4'b0001) begin
+            S = 0000101;
+        end
+    end
+    if(A == 4'b0101) begin
+        if(B == 4'b0001) begin
+            S = 0000110;
+        end
+    end
+    if(A == 4'b0110) begin
+        if(B == 4'b0001) begin
+            S = 0000111;
+        end
+    end
+    if(A == 4'b0111) begin
+        if(B == 4'b0001) begin
+            S = 0001000;
+        end
+    end
+    if(A == 4'b1000) begin
+        if(B == 4'b0001) begin
+            S = 0001001;
+        end
+    end
+    if(A == 4'b1001) begin
+        if(B == 4'b0001) begin
+            S = 0001010;
+        end
+    end
+    if(A == 4'b0000) begin
+        if(B == 4'b0010) begin
+            S = 0000010;
+        end
+    end
+    if(A == 4'b0001) begin
+        if(B == 4'b0010) begin
+            S = 0000011;
+        end
+    end
+    if(A == 4'b0010) begin
+        if(B == 4'b0010) begin
+            S = 0000100;
+        end
+    end
+    if(A == 4'b0011) begin
+        if(B == 4'b0010) begin
+            S = 0000101;
+        end
+    end
+    if(A == 4'b0100) begin
+        if(B == 4'b0010) begin
+            S = 0000110;
+        end
+    end
+    if(A == 4'b0101) begin
+        if(B == 4'b0010) begin
+            S = 0000111;
+        end
+    end
+    if(A == 4'b0110) begin
+        if(B == 4'b0010) begin
+            S = 0001000;
+        end
+    end
+    if(A == 4'b0111) begin
+        if(B == 4'b0010) begin
+            S = 0001001;
+        end
+    end
+    if(A == 4'b1000) begin
+        if(B == 4'b0010) begin
+            S = 0001010;
+        end
+    end
+    if(A == 4'b1001) begin
+        if(B == 4'b0010) begin
+            S = 0001011;
+        end
+    end
+    if(A == 4'b0000) begin
+        if(B == 4'b0011) begin
+            S = 0000011;
+        end
+    end
+    if(A == 4'b0001) begin
+        if(B == 4'b0011) begin
+            S = 0000100;
+        end
+    end
+    if(A == 4'b0010) begin
+        if(B == 4'b0011) begin
+            S = 0000101;
+        end
+    end
+    if(A == 4'b0011) begin
+        if(B == 4'b0011) begin
+            S = 0000110;
+        end
+    end
+    if(A == 4'b0100) begin
+        if(B == 4'b0011) begin
+            S = 0000111;
+        end
+    end
+    if(A == 4'b0101) begin
+        if(B == 4'b0011) begin
+            S = 0001000;
+        end
+    end
+    if(A == 4'b0110) begin
+        if(B == 4'b0011) begin
+            S = 0001001;
+        end
+    end
+    if(A == 4'b0111) begin
+        if(B == 4'b0011) begin
+            S = 0001010;
+        end
+    end
+    if(A == 4'b1000) begin
+        if(B == 4'b0011) begin
+            S = 0001011;
+        end
+    end
+    if(A == 4'b1001) begin
+        if(B == 4'b0011) begin
+            S = 0001100;
+        end
+    end
+    if(A == 4'b0000) begin
+        if(B == 4'b0100) begin
+            S = 0000100;
+        end
+    end
+    if(A == 4'b0001) begin
+        if(B == 4'b0100) begin
+            S = 0000101;
+        end
+    end
+    if(A == 4'b0010) begin
+        if(B == 4'b0100) begin
+            S = 0000110;
+        end
+    end
+    if(A == 4'b0011) begin
+        if(B == 4'b0100) begin
+            S = 0000111;
+        end
+    end
+    if(A == 4'b0100) begin
+        if(B == 4'b0100) begin
+            S = 0001000;
+        end
+    end
+    if(A == 4'b0101) begin
+        if(B == 4'b0100) begin
+            S = 0001001;
+        end
+    end
+    if(A == 4'b0110) begin
+        if(B == 4'b0100) begin
+            S = 0001010;
+        end
+    end
+    if(A == 4'b0111) begin
+        if(B == 4'b0100) begin
+            S = 0001011;
+        end
+    end
+    if(A == 4'b1000) begin
+        if(B == 4'b0100) begin
+            S = 0001100;
+        end
+    end
+    if(A == 4'b1001) begin
+        if(B == 4'b0100) begin
+            S = 0001101;
+        end
+    end
+    if(A == 4'b0000) begin
+        if(B == 4'b0101) begin
+            S = 0000101;
+        end
+    end
+    if(A == 4'b0001) begin
+        if(B == 4'b0101) begin
+            S = 0000110;
+        end
+    end
+    if(A == 4'b0010) begin
+        if(B == 4'b0101) begin
+            S = 0000111;
+        end
+    end
+    if(A == 4'b0011) begin
+        if(B == 4'b0101) begin
+            S = 0001000;
+        end
+    end
+    if(A == 4'b0100) begin
+        if(B == 4'b0101) begin
+            S = 0001001;
+        end
+    end
+    if(A == 4'b0101) begin
+        if(B == 4'b0101) begin
+            S = 0001010;
+        end
+    end
+    if(A == 4'b0110) begin
+        if(B == 4'b0101) begin
+            S = 0001011;
+        end
+    end
+    if(A == 4'b0111) begin
+        if(B == 4'b0101) begin
+            S = 0001100;
+        end
+    end
+    if(A == 4'b1000) begin
+        if(B == 4'b0101) begin
+            S = 0001101;
+        end
+    end
+    if(A == 4'b1001) begin
+        if(B == 4'b0101) begin
+            S = 0001110;
+        end
+    end
+    if(A == 4'b0000) begin
+        if(B == 4'b0110) begin
+            S = 0000110;
+        end
+    end
+    if(A == 4'b0001) begin
+        if(B == 4'b0110) begin
+            S = 0000111;
+        end
+    end
+    if(A == 4'b0010) begin
+        if(B == 4'b0110) begin
+            S = 0001000;
+        end
+    end
+    if(A == 4'b0011) begin
+        if(B == 4'b0110) begin
+            S = 0001001;
+        end
+    end
+    if(A == 4'b0100) begin
+        if(B == 4'b0110) begin
+            S = 0001010;
+        end
+    end
+    if(A == 4'b0101) begin
+        if(B == 4'b0110) begin
+            S = 0001011;
+        end
+    end
+    if(A == 4'b0110) begin
+        if(B == 4'b0110) begin
+            S = 0001100;
+        end
+    end
+    if(A == 4'b0111) begin
+        if(B == 4'b0110) begin
+            S = 0001101;
+        end
+    end
+    if(A == 4'b1000) begin
+        if(B == 4'b0110) begin
+            S = 0001110;
+        end
+    end
+    if(A == 4'b1001) begin
+        if(B == 4'b0110) begin
+            S = 0001111;
+        end
+    end
+    if(A == 4'b0000) begin
+        if(B == 4'b0111) begin
+            S = 0000111;
+        end
+    end
+    if(A == 4'b0001) begin
+        if(B == 4'b0111) begin
+            S = 0001000;
+        end
+    end
+    if(A == 4'b0010) begin
+        if(B == 4'b0111) begin
+            S = 0001001;
+        end
+    end
+    if(A == 4'b0011) begin
+        if(B == 4'b0111) begin
+            S = 0001010;
+        end
+    end
+    if(A == 4'b0100) begin
+        if(B == 4'b0111) begin
+            S = 0001011;
+        end
+    end
+    if(A == 4'b0101) begin
+        if(B == 4'b0111) begin
+            S = 0001100;
+        end
+    end
+    if(A == 4'b0110) begin
+        if(B == 4'b0111) begin
+            S = 0001101;
+        end
+    end
+    if(A == 4'b0111) begin
+        if(B == 4'b0111) begin
+            S = 0001110;
+        end
+    end
+    if(A == 4'b1000) begin
+        if(B == 4'b0111) begin
+            S = 0001111;
+        end
+    end
+    if(A == 4'b1001) begin
+        if(B == 4'b0111) begin
+            S = 0010000;
+        end
+    end
+    if(A == 4'b0000) begin
+        if(B == 4'b1000) begin
+            S = 0001000;
+        end
+    end
+    if(A == 4'b0001) begin
+        if(B == 4'b1000) begin
+            S = 0001001;
+        end
+    end
+    if(A == 4'b0010) begin
+        if(B == 4'b1000) begin
+            S = 0001010;
+        end
+    end
+    if(A == 4'b0011) begin
+        if(B == 4'b1000) begin
+            S = 0001011;
+        end
+    end
+    if(A == 4'b0100) begin
+        if(B == 4'b1000) begin
+            S = 0001100;
+        end
+    end
+    if(A == 4'b0101) begin
+        if(B == 4'b1000) begin
+            S = 0001101;
+        end
+    end
+    if(A == 4'b0110) begin
+        if(B == 4'b1000) begin
+            S = 0001110;
+        end
+    end
+    if(A == 4'b0111) begin
+        if(B == 4'b1000) begin
+            S = 0001111;
+        end
+    end
+    if(A == 4'b1000) begin
+        if(B == 4'b1000) begin
+            S = 0010000;
+        end
+    end
+    if(A == 4'b1001) begin
+        if(B == 4'b1000) begin
+            S = 00010001;
+        end
+    end
+    if(A == 4'b0000) begin
+        if(B == 4'b1001) begin
+            S = 0001001;
+        end
+    end
+    if(A == 4'b0001) begin
+        if(B == 4'b1001) begin
+            S = 0001010;
+        end
+    end
+    if(A == 4'b0010) begin
+        if(B == 4'b1001) begin
+            S = 0001011;
+        end
+    end
+    if(A == 4'b0011) begin
+        if(B == 4'b1001) begin
+            S = 0001100;
+        end
+    end
+    if(A == 4'b0100) begin
+        if(B == 4'b1001) begin
+            S = 0001101;
+        end
+    end
+    if(A == 4'b0101) begin
+        if(B == 4'b1001) begin
+            S = 0001110;
+        end
+    end
+    if(A == 4'b0110) begin
+        if(B == 4'b1001) begin
+            S = 0001111;
+        end
+    end
+    if(A == 4'b0111) begin
+        if(B == 4'b1001) begin
+            S = 0010000;
+        end
+    end
+    if(A == 4'b1000) begin
+        if(B == 4'b1001) begin
+            S = 00010001;
+        end
+    end
+    if(A == 4'b1001) begin
+        if(B == 4'b1001) begin
+            S = 00010010;
+        end
+    end
+endmodule

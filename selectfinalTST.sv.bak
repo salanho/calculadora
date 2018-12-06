@@ -1,0 +1,29 @@
+module seletorfinalTST(input sum[3..0], sub[3..0], equal[3..0], Escolha[3..0], output saida[3..0]);
+	always @(*)
+	case (Escolha)
+	
+			4'b0000 : saida = x; 
+			4'b0001 : saida = x;
+			4'b0010 : saida = x; 
+			4'b0011 : saida = x; 
+
+			4'b0100 : saida = x; 
+			4'b0101 : saida = x; 
+			4'b0110 : saida = x; 
+			4'b0111 : saida = x; 
+ 
+			4'b1000 : saida = x; 
+			4'b1001 : saida = x;
+			
+			4'b1011 : saida[3..0] = sum[3..0];	//printa adicao; 
+			4'b1100 : saida[3..0] = sub[3..0]];	//prita subtracao;
+			
+			4'b1101 : saida = x; 
+		
+			4'b1110 : saida = x;	//Salva na memoria; 
+			4'b1111 : saida[3..0] = equal[3..0];	//printa Tira da memoria; 
+	
+			default : Resultado = 0; 
+		endcase
+
+endmodule

@@ -1,0 +1,7 @@
+module soma(a, b, s);
+input a[3:0];
+input b[3:0];
+output s[7:0];
+
+s = a + b;
+endmodule

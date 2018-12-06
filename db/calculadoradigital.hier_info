@@ -1,0 +1,905 @@
+|poha
+GPIO_1[0] <> teclado:inst1.GPIO_1[0]
+GPIO_1[1] <> teclado:inst1.GPIO_1[1]
+GPIO_1[2] <> teclado:inst1.GPIO_1[2]
+GPIO_1[3] <> teclado:inst1.GPIO_1[3]
+GPIO_1[4] <> teclado:inst1.GPIO_1[4]
+GPIO_1[5] <> teclado:inst1.GPIO_1[5]
+GPIO_1[6] <> teclado:inst1.GPIO_1[6]
+GPIO_1[7] <> teclado:inst1.GPIO_1[7]
+GPIO_1[8] <> teclado:inst1.GPIO_1[8]
+GPIO_1[9] <> teclado:inst1.GPIO_1[9]
+GPIO_1[10] <> teclado:inst1.GPIO_1[10]
+GPIO_1[11] <> teclado:inst1.GPIO_1[11]
+GPIO_1[12] <> teclado:inst1.GPIO_1[12]
+GPIO_1[13] <> teclado:inst1.GPIO_1[13]
+GPIO_1[14] <> teclado:inst1.GPIO_1[14]
+GPIO_1[15] <> teclado:inst1.GPIO_1[15]
+GPIO_1[16] <> teclado:inst1.GPIO_1[16]
+GPIO_1[17] <> teclado:inst1.GPIO_1[17]
+GPIO_1[18] <> teclado:inst1.GPIO_1[18]
+GPIO_1[19] <> teclado:inst1.GPIO_1[19]
+GPIO_1[20] <> teclado:inst1.GPIO_1[20]
+GPIO_1[21] <> teclado:inst1.GPIO_1[21]
+GPIO_1[22] <> teclado:inst1.GPIO_1[22]
+GPIO_1[23] <> teclado:inst1.GPIO_1[23]
+GPIO_1[24] <> teclado:inst1.GPIO_1[24]
+GPIO_1[25] <> teclado:inst1.GPIO_1[25]
+GPIO_1[26] <> teclado:inst1.GPIO_1[26]
+GPIO_1[27] <> teclado:inst1.GPIO_1[27]
+GPIO_1[28] <> teclado:inst1.GPIO_1[28]
+GPIO_1[29] <> teclado:inst1.GPIO_1[29]
+GPIO_1[30] <> teclado:inst1.GPIO_1[30]
+GPIO_1[31] <> teclado:inst1.GPIO_1[31]
+GPIO_1[32] <> teclado:inst1.GPIO_1[32]
+GPIO_1[33] <> teclado:inst1.GPIO_1[33]
+GPIO_1[34] <> teclado:inst1.GPIO_1[34]
+GPIO_1[35] <> teclado:inst1.GPIO_1[35]
+CLOCK_50 => teclado:inst1.CLOCK_50
+CLOCK_50 => reg8:inst6.CLK
+CLOCK_50 => regSoma:inst3.CLK
+CLOCK_50 => reg8:inst23.CLK
+CLOCK_50 => pegador:vaitomarnocu.enable
+CLOCK_50 => reg8:inst18.CLK
+CLOCK_50 => reg8:inst24.CLK
+HEX0[0] <= decoder7:inst29.Out[0]
+HEX0[1] <= decoder7:inst29.Out[1]
+HEX0[2] <= decoder7:inst29.Out[2]
+HEX0[3] <= decoder7:inst29.Out[3]
+HEX0[4] <= decoder7:inst29.Out[4]
+HEX0[5] <= decoder7:inst29.Out[5]
+HEX0[6] <= decoder7:inst29.Out[6]
+SW[0] => conversor_teste:inst2.switch
+HEX1[0] <= decoder7:inst11.Out[0]
+HEX1[1] <= decoder7:inst11.Out[1]
+HEX1[2] <= decoder7:inst11.Out[2]
+HEX1[3] <= decoder7:inst11.Out[3]
+HEX1[4] <= decoder7:inst11.Out[4]
+HEX1[5] <= decoder7:inst11.Out[5]
+HEX1[6] <= decoder7:inst11.Out[6]
+HEX2[0] <= decoder7:inst25.Out[0]
+HEX2[1] <= decoder7:inst25.Out[1]
+HEX2[2] <= decoder7:inst25.Out[2]
+HEX2[3] <= decoder7:inst25.Out[3]
+HEX2[4] <= decoder7:inst25.Out[4]
+HEX2[5] <= decoder7:inst25.Out[5]
+HEX2[6] <= decoder7:inst25.Out[6]
+HEX3[0] <= decoder7:inst20.Out[0]
+HEX3[1] <= decoder7:inst20.Out[1]
+HEX3[2] <= decoder7:inst20.Out[2]
+HEX3[3] <= decoder7:inst20.Out[3]
+HEX3[4] <= decoder7:inst20.Out[4]
+HEX3[5] <= decoder7:inst20.Out[5]
+HEX3[6] <= decoder7:inst20.Out[6]
+HEX4[0] <= decoder7:inst31.Out[0]
+HEX4[1] <= decoder7:inst31.Out[1]
+HEX4[2] <= decoder7:inst31.Out[2]
+HEX4[3] <= decoder7:inst31.Out[3]
+HEX4[4] <= decoder7:inst31.Out[4]
+HEX4[5] <= decoder7:inst31.Out[5]
+HEX4[6] <= decoder7:inst31.Out[6]
+HEX5[0] <= decoder7:inst27.Out[0]
+HEX5[1] <= decoder7:inst27.Out[1]
+HEX5[2] <= decoder7:inst27.Out[2]
+HEX5[3] <= decoder7:inst27.Out[3]
+HEX5[4] <= decoder7:inst27.Out[4]
+HEX5[5] <= decoder7:inst27.Out[5]
+HEX5[6] <= decoder7:inst27.Out[6]
+HEX6[0] <= decoder7:inst26.Out[0]
+HEX6[1] <= decoder7:inst26.Out[1]
+HEX6[2] <= decoder7:inst26.Out[2]
+HEX6[3] <= decoder7:inst26.Out[3]
+HEX6[4] <= decoder7:inst26.Out[4]
+HEX6[5] <= decoder7:inst26.Out[5]
+HEX6[6] <= decoder7:inst26.Out[6]
+HEX7[0] <= decoder7:inst30.Out[0]
+HEX7[1] <= decoder7:inst30.Out[1]
+HEX7[2] <= decoder7:inst30.Out[2]
+HEX7[3] <= decoder7:inst30.Out[3]
+HEX7[4] <= decoder7:inst30.Out[4]
+HEX7[5] <= decoder7:inst30.Out[5]
+HEX7[6] <= decoder7:inst30.Out[6]
+LEDR[0] <= teclado:inst1.ready
+LEDR[1] <= regSoma:inst3.somar
+LEDR[2] <= pegador:vaitomarnocu.Salvar
+
+
+|poha|teclado:inst1
+GPIO_1[0] <> <UNC>
+GPIO_1[1] <> <UNC>
+GPIO_1[2] <> <UNC>
+GPIO_1[3] <> <UNC>
+GPIO_1[4] <> <UNC>
+GPIO_1[5] <> <UNC>
+GPIO_1[6] <> <UNC>
+GPIO_1[7] <> <UNC>
+GPIO_1[8] <> <UNC>
+GPIO_1[9] <> <UNC>
+GPIO_1[10] <> <UNC>
+GPIO_1[12] <> <UNC>
+GPIO_1[14] <> <UNC>
+GPIO_1[16] <> <UNC>
+GPIO_1[18] <> <UNC>
+GPIO_1[19] <> GPIO_1[19]
+GPIO_1[20] <> <UNC>
+GPIO_1[21] <> GPIO_1[21]
+GPIO_1[22] <> <UNC>
+GPIO_1[23] <> GPIO_1[23]
+GPIO_1[24] <> <UNC>
+GPIO_1[25] <> GPIO_1[25]
+GPIO_1[26] <> <UNC>
+GPIO_1[27] <> <UNC>
+GPIO_1[28] <> <UNC>
+GPIO_1[29] <> <UNC>
+GPIO_1[30] <> <UNC>
+GPIO_1[31] <> <UNC>
+GPIO_1[32] <> <UNC>
+GPIO_1[33] <> <UNC>
+GPIO_1[34] <> <UNC>
+GPIO_1[35] <> <UNC>
+CLOCK_50 => CLOCK_50.IN1
+tecla[0] <= controlador:U0.tecla
+tecla[1] <= controlador:U0.tecla
+tecla[2] <= controlador:U0.tecla
+tecla[3] <= controlador:U0.tecla
+ready <= controlador:U0.ready
+
+
+|poha|teclado:inst1|controlador:U0
+clk => clk.IN4
+linhaN[0] <= linha[0].DB_MAX_OUTPUT_PORT_TYPE
+linhaN[1] <= linha[1].DB_MAX_OUTPUT_PORT_TYPE
+linhaN[2] <= linha[2].DB_MAX_OUTPUT_PORT_TYPE
+linhaN[3] <= linha[3].DB_MAX_OUTPUT_PORT_TYPE
+colunaN[0] => coluna[0].IN1
+colunaN[1] => coluna[1].IN1
+colunaN[2] => coluna[2].IN1
+colunaN[3] => coluna[3].IN1
+tecla[0] <= tecla[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tecla[1] <= tecla[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tecla[2] <= tecla[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tecla[3] <= tecla[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ready <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|teclado:inst1|controlador:U0|Debouncer:d0
+iClock => State.CLK
+iClock => Counter[0].CLK
+iClock => Counter[1].CLK
+iClock => Counter[2].CLK
+iClock => Counter[3].CLK
+iClock => Counter[4].CLK
+iClock => Counter[5].CLK
+iClock => Counter[6].CLK
+iClock => Counter[7].CLK
+iClock => Counter[8].CLK
+iClock => Counter[9].CLK
+iClock => Counter[10].CLK
+iClock => Counter[11].CLK
+iClock => Counter[12].CLK
+iClock => Counter[13].CLK
+iClock => Counter[14].CLK
+iClock => Counter[15].CLK
+iClock => Counter[16].CLK
+iClock => Counter[17].CLK
+iClock => Counter[18].CLK
+iClock => FF[0].CLK
+iClock => FF[1].CLK
+iBouncy => FF[0].DATAIN
+oPulse <= oPulse.DB_MAX_OUTPUT_PORT_TYPE
+oState <= State.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|teclado:inst1|controlador:U0|Debouncer:d1
+iClock => State.CLK
+iClock => Counter[0].CLK
+iClock => Counter[1].CLK
+iClock => Counter[2].CLK
+iClock => Counter[3].CLK
+iClock => Counter[4].CLK
+iClock => Counter[5].CLK
+iClock => Counter[6].CLK
+iClock => Counter[7].CLK
+iClock => Counter[8].CLK
+iClock => Counter[9].CLK
+iClock => Counter[10].CLK
+iClock => Counter[11].CLK
+iClock => Counter[12].CLK
+iClock => Counter[13].CLK
+iClock => Counter[14].CLK
+iClock => Counter[15].CLK
+iClock => Counter[16].CLK
+iClock => Counter[17].CLK
+iClock => Counter[18].CLK
+iClock => FF[0].CLK
+iClock => FF[1].CLK
+iBouncy => FF[0].DATAIN
+oPulse <= oPulse.DB_MAX_OUTPUT_PORT_TYPE
+oState <= State.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|teclado:inst1|controlador:U0|Debouncer:d2
+iClock => State.CLK
+iClock => Counter[0].CLK
+iClock => Counter[1].CLK
+iClock => Counter[2].CLK
+iClock => Counter[3].CLK
+iClock => Counter[4].CLK
+iClock => Counter[5].CLK
+iClock => Counter[6].CLK
+iClock => Counter[7].CLK
+iClock => Counter[8].CLK
+iClock => Counter[9].CLK
+iClock => Counter[10].CLK
+iClock => Counter[11].CLK
+iClock => Counter[12].CLK
+iClock => Counter[13].CLK
+iClock => Counter[14].CLK
+iClock => Counter[15].CLK
+iClock => Counter[16].CLK
+iClock => Counter[17].CLK
+iClock => Counter[18].CLK
+iClock => FF[0].CLK
+iClock => FF[1].CLK
+iBouncy => FF[0].DATAIN
+oPulse <= oPulse.DB_MAX_OUTPUT_PORT_TYPE
+oState <= State.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|teclado:inst1|controlador:U0|Debouncer:d3
+iClock => State.CLK
+iClock => Counter[0].CLK
+iClock => Counter[1].CLK
+iClock => Counter[2].CLK
+iClock => Counter[3].CLK
+iClock => Counter[4].CLK
+iClock => Counter[5].CLK
+iClock => Counter[6].CLK
+iClock => Counter[7].CLK
+iClock => Counter[8].CLK
+iClock => Counter[9].CLK
+iClock => Counter[10].CLK
+iClock => Counter[11].CLK
+iClock => Counter[12].CLK
+iClock => Counter[13].CLK
+iClock => Counter[14].CLK
+iClock => Counter[15].CLK
+iClock => Counter[16].CLK
+iClock => Counter[17].CLK
+iClock => Counter[18].CLK
+iClock => FF[0].CLK
+iClock => FF[1].CLK
+iBouncy => FF[0].DATAIN
+oPulse <= oPulse.DB_MAX_OUTPUT_PORT_TYPE
+oState <= State.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|decoder7:inst29
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|BIN_PARA_BCD_AGORAVAI:inst28
+bin[0] => binario.DATAA
+bin[0] => Add0.IN16
+bin[1] => binario[1].DATAA
+bin[1] => Add0.IN15
+bin[2] => binario[2].DATAA
+bin[2] => Add0.IN14
+bin[3] => binario[3].DATAA
+bin[3] => Add0.IN13
+bin[4] => binario[4].DATAA
+bin[4] => Add0.IN12
+bin[5] => binario[5].DATAA
+bin[5] => Add0.IN11
+bin[6] => binario[6].DATAA
+bin[6] => Add0.IN10
+bin[7] => binario[7].OUTPUTSELECT
+bin[7] => binario[6].OUTPUTSELECT
+bin[7] => binario[5].OUTPUTSELECT
+bin[7] => binario[4].OUTPUTSELECT
+bin[7] => binario[3].OUTPUTSELECT
+bin[7] => binario[2].OUTPUTSELECT
+bin[7] => binario[1].OUTPUTSELECT
+bin[7] => binario.OUTPUTSELECT
+bin[7] => Add0.IN9
+bin[7] => negativo.DATAIN
+dezenas[0] <= unidades.DB_MAX_OUTPUT_PORT_TYPE
+dezenas[1] <= dezenas.DB_MAX_OUTPUT_PORT_TYPE
+dezenas[2] <= dezenas.DB_MAX_OUTPUT_PORT_TYPE
+dezenas[3] <= dezenas.DB_MAX_OUTPUT_PORT_TYPE
+unidades[0] <= binario.DB_MAX_OUTPUT_PORT_TYPE
+unidades[1] <= unidades.DB_MAX_OUTPUT_PORT_TYPE
+unidades[2] <= unidades.DB_MAX_OUTPUT_PORT_TYPE
+unidades[3] <= unidades.DB_MAX_OUTPUT_PORT_TYPE
+negativo <= bin[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|borabora:inst7
+Escolha[0] => Numero[0]$latch.DATAIN
+Escolha[1] => Numero[1]$latch.DATAIN
+Escolha[2] => Numero[2]$latch.DATAIN
+Escolha[3] => Numero[3]$latch.DATAIN
+Escolha[4] => Numero[4]$latch.DATAIN
+Escolha[5] => Numero[5]$latch.DATAIN
+Escolha[6] => Numero[6]$latch.DATAIN
+Escolha[7] => Numero[7]$latch.DATAIN
+enable => Numero[0]$latch.LATCH_ENABLE
+enable => Numero[1]$latch.LATCH_ENABLE
+enable => Numero[2]$latch.LATCH_ENABLE
+enable => Numero[3]$latch.LATCH_ENABLE
+enable => Numero[4]$latch.LATCH_ENABLE
+enable => Numero[5]$latch.LATCH_ENABLE
+enable => Numero[6]$latch.LATCH_ENABLE
+enable => Numero[7]$latch.LATCH_ENABLE
+Numero[0] <= Numero[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Numero[1] <= Numero[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Numero[2] <= Numero[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Numero[3] <= Numero[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Numero[4] <= Numero[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Numero[5] <= Numero[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Numero[6] <= Numero[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Numero[7] <= Numero[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|mandatela:inst14
+Escolha[0] => Equal0.IN7
+Escolha[1] => Equal0.IN6
+Escolha[2] => Equal0.IN5
+Escolha[3] => Equal0.IN4
+enable => D$latch.LATCH_ENABLE
+D <= D$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|reg8:inst6
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+CLK => Q[3]~reg0.CLK
+CLK => Q[4]~reg0.CLK
+CLK => Q[5]~reg0.CLK
+CLK => Q[6]~reg0.CLK
+CLK => Q[7]~reg0.CLK
+D[0] => Q.DATAA
+D[1] => Q.DATAA
+D[2] => Q.DATAA
+D[3] => Q.DATAA
+D[4] => Q.DATAA
+D[5] => Q.DATAA
+D[6] => Q.DATAA
+D[7] => Q.DATAA
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|SOMA:inst
+A[0] => Add0.IN8
+A[1] => Add0.IN7
+A[2] => Add0.IN6
+A[3] => Add0.IN5
+A[4] => Add0.IN4
+A[5] => Add0.IN3
+A[6] => Add0.IN2
+A[7] => Add0.IN1
+B[0] => Add0.IN16
+B[1] => Add0.IN15
+B[2] => Add0.IN14
+B[3] => Add0.IN13
+B[4] => Add0.IN12
+B[5] => Add0.IN11
+B[6] => Add0.IN10
+B[7] => Add0.IN9
+S[0] <= S[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= S[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+enable => S[0]$latch.LATCH_ENABLE
+enable => S[1]$latch.LATCH_ENABLE
+enable => S[2]$latch.LATCH_ENABLE
+enable => S[3]$latch.LATCH_ENABLE
+enable => S[4]$latch.LATCH_ENABLE
+enable => S[5]$latch.LATCH_ENABLE
+enable => S[6]$latch.LATCH_ENABLE
+enable => S[7]$latch.LATCH_ENABLE
+
+
+|poha|regSoma:inst3
+reset => ~NO_FANOUT~
+enable => somar~reg0.DATAIN
+CLK => somar~reg0.CLK
+somar <= somar~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|result:inst9
+Escolha[0] => Equal0.IN7
+Escolha[1] => Equal0.IN6
+Escolha[2] => Equal0.IN5
+Escolha[3] => Equal0.IN4
+enable => add$latch.LATCH_ENABLE
+add <= add$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|reg8:inst23
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+CLK => Q[3]~reg0.CLK
+CLK => Q[4]~reg0.CLK
+CLK => Q[5]~reg0.CLK
+CLK => Q[6]~reg0.CLK
+CLK => Q[7]~reg0.CLK
+D[0] => Q.DATAA
+D[1] => Q.DATAA
+D[2] => Q.DATAA
+D[3] => Q.DATAA
+D[4] => Q.DATAA
+D[5] => Q.DATAA
+D[6] => Q.DATAA
+D[7] => Q.DATAA
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|conversor_teste:inst2
+A[0] => saida1.DATAA
+A[1] => saida1.DATAA
+A[2] => saida1.DATAA
+A[3] => saida1.DATAA
+A[4] => saida1.DATAA
+A[5] => saida1.DATAA
+A[6] => saida1.DATAA
+A[7] => saida1.DATAA
+mem[0] => saida1.DATAB
+mem[1] => saida1.DATAB
+mem[2] => saida1.DATAB
+mem[3] => saida1.DATAB
+mem[4] => saida1.DATAB
+mem[5] => saida1.DATAB
+mem[6] => saida1.DATAB
+mem[7] => saida1.DATAB
+switch => saida2[0]$latch.LATCH_ENABLE
+switch => saida2[1]$latch.LATCH_ENABLE
+switch => saida2[2]$latch.LATCH_ENABLE
+switch => saida2[3]$latch.LATCH_ENABLE
+switch => saida2[4]$latch.LATCH_ENABLE
+switch => saida2[5]$latch.LATCH_ENABLE
+switch => saida2[6]$latch.LATCH_ENABLE
+switch => saida2[7]$latch.LATCH_ENABLE
+switch => saida1[0]$latch.LATCH_ENABLE
+switch => saida1[1]$latch.LATCH_ENABLE
+switch => saida1[2]$latch.LATCH_ENABLE
+switch => saida1[3]$latch.LATCH_ENABLE
+switch => saida1[4]$latch.LATCH_ENABLE
+switch => saida1[5]$latch.LATCH_ENABLE
+switch => saida1[6]$latch.LATCH_ENABLE
+switch => saida1[7]$latch.LATCH_ENABLE
+pegamem => saida1.OUTPUTSELECT
+pegamem => saida1.OUTPUTSELECT
+pegamem => saida1.OUTPUTSELECT
+pegamem => saida1.OUTPUTSELECT
+pegamem => saida1.OUTPUTSELECT
+pegamem => saida1.OUTPUTSELECT
+pegamem => saida1.OUTPUTSELECT
+pegamem => saida1.OUTPUTSELECT
+saida1[0] <= saida1[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida1[1] <= saida1[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida1[2] <= saida1[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida1[3] <= saida1[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida1[4] <= saida1[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida1[5] <= saida1[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida1[6] <= saida1[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida1[7] <= saida1[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida2[0] <= saida2[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida2[1] <= saida2[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida2[2] <= saida2[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida2[3] <= saida2[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida2[4] <= saida2[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida2[5] <= saida2[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida2[6] <= saida2[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida2[7] <= saida2[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|pegador:vaitomarnocu
+Escolha[0] => Equal0.IN7
+Escolha[0] => Equal1.IN7
+Escolha[1] => Equal0.IN6
+Escolha[1] => Equal1.IN6
+Escolha[2] => Equal0.IN5
+Escolha[2] => Equal1.IN5
+Escolha[3] => Equal0.IN4
+Escolha[3] => Equal1.IN4
+enable => Salvar$latch.LATCH_ENABLE
+Salvar <= Salvar$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|decoder8NOVO:inst17
+In[0] => Out[0].DATAIN
+In[1] => Out[1].DATAIN
+In[2] => Out[2].DATAIN
+In[3] => Out[3].DATAIN
+Out[0] <= In[0].DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= In[1].DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= In[2].DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= In[3].DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= <GND>
+Out[5] <= <GND>
+Out[6] <= <GND>
+Out[7] <= <GND>
+
+
+|poha|number1:inst13
+Escolha[0] => Decoder0.IN7
+Escolha[1] => Decoder0.IN6
+Escolha[2] => Decoder0.IN5
+Escolha[3] => Decoder0.IN4
+Escolha[4] => Decoder0.IN3
+Escolha[5] => Decoder0.IN2
+Escolha[6] => Decoder0.IN1
+Escolha[7] => Decoder0.IN0
+enable => Numero1[0]$latch.LATCH_ENABLE
+enable => Numero1[1]$latch.LATCH_ENABLE
+enable => Numero1[2]$latch.LATCH_ENABLE
+enable => Numero1[3]$latch.LATCH_ENABLE
+Numero1[0] <= Numero1[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Numero1[1] <= Numero1[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Numero1[2] <= Numero1[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Numero1[3] <= Numero1[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Numero1[4] <= <GND>
+Numero1[5] <= <GND>
+Numero1[6] <= <GND>
+Numero1[7] <= <GND>
+
+
+|poha|reg8:inst18
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+CLK => Q[3]~reg0.CLK
+CLK => Q[4]~reg0.CLK
+CLK => Q[5]~reg0.CLK
+CLK => Q[6]~reg0.CLK
+CLK => Q[7]~reg0.CLK
+D[0] => Q.DATAA
+D[1] => Q.DATAA
+D[2] => Q.DATAA
+D[3] => Q.DATAA
+D[4] => Q.DATAA
+D[5] => Q.DATAA
+D[6] => Q.DATAA
+D[7] => Q.DATAA
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|outooo:ADFAD
+n2[0] => O1[0]$latch.DATAIN
+n2[1] => O1[1]$latch.DATAIN
+n2[2] => O1[2]$latch.DATAIN
+n2[3] => O1[3]$latch.DATAIN
+n2[4] => O1[4]$latch.DATAIN
+n2[5] => O1[5]$latch.DATAIN
+n2[6] => O1[6]$latch.DATAIN
+n2[7] => O1[7]$latch.DATAIN
+enable => O1[0]$latch.LATCH_ENABLE
+enable => O1[1]$latch.LATCH_ENABLE
+enable => O1[2]$latch.LATCH_ENABLE
+enable => O1[3]$latch.LATCH_ENABLE
+enable => O1[4]$latch.LATCH_ENABLE
+enable => O1[5]$latch.LATCH_ENABLE
+enable => O1[6]$latch.LATCH_ENABLE
+enable => O1[7]$latch.LATCH_ENABLE
+O1[0] <= O1[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+O1[1] <= O1[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+O1[2] <= O1[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+O1[3] <= O1[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+O1[4] <= O1[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+O1[5] <= O1[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+O1[6] <= O1[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+O1[7] <= O1[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|salvamem:inst8
+Escolha[0] => Equal0.IN7
+Escolha[1] => Equal0.IN6
+Escolha[2] => Equal0.IN5
+Escolha[3] => Equal0.IN4
+enable => Salvar$latch.LATCH_ENABLE
+Salvar <= Salvar$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|reg8:inst24
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+CLK => Q[3]~reg0.CLK
+CLK => Q[4]~reg0.CLK
+CLK => Q[5]~reg0.CLK
+CLK => Q[6]~reg0.CLK
+CLK => Q[7]~reg0.CLK
+D[0] => Q.DATAA
+D[1] => Q.DATAA
+D[2] => Q.DATAA
+D[3] => Q.DATAA
+D[4] => Q.DATAA
+D[5] => Q.DATAA
+D[6] => Q.DATAA
+D[7] => Q.DATAA
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|decoder7:inst11
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|decoder7:inst25
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|BIN_PARA_BCD_AGORAVAI:inst19
+bin[0] => binario.DATAA
+bin[0] => Add0.IN16
+bin[1] => binario[1].DATAA
+bin[1] => Add0.IN15
+bin[2] => binario[2].DATAA
+bin[2] => Add0.IN14
+bin[3] => binario[3].DATAA
+bin[3] => Add0.IN13
+bin[4] => binario[4].DATAA
+bin[4] => Add0.IN12
+bin[5] => binario[5].DATAA
+bin[5] => Add0.IN11
+bin[6] => binario[6].DATAA
+bin[6] => Add0.IN10
+bin[7] => binario[7].OUTPUTSELECT
+bin[7] => binario[6].OUTPUTSELECT
+bin[7] => binario[5].OUTPUTSELECT
+bin[7] => binario[4].OUTPUTSELECT
+bin[7] => binario[3].OUTPUTSELECT
+bin[7] => binario[2].OUTPUTSELECT
+bin[7] => binario[1].OUTPUTSELECT
+bin[7] => binario.OUTPUTSELECT
+bin[7] => Add0.IN9
+bin[7] => negativo.DATAIN
+dezenas[0] <= unidades.DB_MAX_OUTPUT_PORT_TYPE
+dezenas[1] <= dezenas.DB_MAX_OUTPUT_PORT_TYPE
+dezenas[2] <= dezenas.DB_MAX_OUTPUT_PORT_TYPE
+dezenas[3] <= dezenas.DB_MAX_OUTPUT_PORT_TYPE
+unidades[0] <= binario.DB_MAX_OUTPUT_PORT_TYPE
+unidades[1] <= unidades.DB_MAX_OUTPUT_PORT_TYPE
+unidades[2] <= unidades.DB_MAX_OUTPUT_PORT_TYPE
+unidades[3] <= unidades.DB_MAX_OUTPUT_PORT_TYPE
+negativo <= bin[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|decoder7:inst20
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|decoder7:inst31
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|BIN_PARA_BCD_AGORAVAI:inst22
+bin[0] => binario.DATAA
+bin[0] => Add0.IN16
+bin[1] => binario[1].DATAA
+bin[1] => Add0.IN15
+bin[2] => binario[2].DATAA
+bin[2] => Add0.IN14
+bin[3] => binario[3].DATAA
+bin[3] => Add0.IN13
+bin[4] => binario[4].DATAA
+bin[4] => Add0.IN12
+bin[5] => binario[5].DATAA
+bin[5] => Add0.IN11
+bin[6] => binario[6].DATAA
+bin[6] => Add0.IN10
+bin[7] => binario[7].OUTPUTSELECT
+bin[7] => binario[6].OUTPUTSELECT
+bin[7] => binario[5].OUTPUTSELECT
+bin[7] => binario[4].OUTPUTSELECT
+bin[7] => binario[3].OUTPUTSELECT
+bin[7] => binario[2].OUTPUTSELECT
+bin[7] => binario[1].OUTPUTSELECT
+bin[7] => binario.OUTPUTSELECT
+bin[7] => Add0.IN9
+bin[7] => negativo.DATAIN
+dezenas[0] <= unidades.DB_MAX_OUTPUT_PORT_TYPE
+dezenas[1] <= dezenas.DB_MAX_OUTPUT_PORT_TYPE
+dezenas[2] <= dezenas.DB_MAX_OUTPUT_PORT_TYPE
+dezenas[3] <= dezenas.DB_MAX_OUTPUT_PORT_TYPE
+unidades[0] <= binario.DB_MAX_OUTPUT_PORT_TYPE
+unidades[1] <= unidades.DB_MAX_OUTPUT_PORT_TYPE
+unidades[2] <= unidades.DB_MAX_OUTPUT_PORT_TYPE
+unidades[3] <= unidades.DB_MAX_OUTPUT_PORT_TYPE
+negativo <= bin[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|decoder7:inst27
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|decoder7:inst26
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|BIN_PARA_BCD_AGORAVAI:inst21
+bin[0] => binario.DATAA
+bin[0] => Add0.IN16
+bin[1] => binario[1].DATAA
+bin[1] => Add0.IN15
+bin[2] => binario[2].DATAA
+bin[2] => Add0.IN14
+bin[3] => binario[3].DATAA
+bin[3] => Add0.IN13
+bin[4] => binario[4].DATAA
+bin[4] => Add0.IN12
+bin[5] => binario[5].DATAA
+bin[5] => Add0.IN11
+bin[6] => binario[6].DATAA
+bin[6] => Add0.IN10
+bin[7] => binario[7].OUTPUTSELECT
+bin[7] => binario[6].OUTPUTSELECT
+bin[7] => binario[5].OUTPUTSELECT
+bin[7] => binario[4].OUTPUTSELECT
+bin[7] => binario[3].OUTPUTSELECT
+bin[7] => binario[2].OUTPUTSELECT
+bin[7] => binario[1].OUTPUTSELECT
+bin[7] => binario.OUTPUTSELECT
+bin[7] => Add0.IN9
+bin[7] => negativo.DATAIN
+dezenas[0] <= unidades.DB_MAX_OUTPUT_PORT_TYPE
+dezenas[1] <= dezenas.DB_MAX_OUTPUT_PORT_TYPE
+dezenas[2] <= dezenas.DB_MAX_OUTPUT_PORT_TYPE
+dezenas[3] <= dezenas.DB_MAX_OUTPUT_PORT_TYPE
+unidades[0] <= binario.DB_MAX_OUTPUT_PORT_TYPE
+unidades[1] <= unidades.DB_MAX_OUTPUT_PORT_TYPE
+unidades[2] <= unidades.DB_MAX_OUTPUT_PORT_TYPE
+unidades[3] <= unidades.DB_MAX_OUTPUT_PORT_TYPE
+negativo <= bin[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|decoder7:inst30
+In[0] => Decoder0.IN3
+In[1] => Decoder0.IN2
+In[2] => Decoder0.IN1
+In[3] => Decoder0.IN0
+Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
