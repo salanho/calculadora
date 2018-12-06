@@ -3,7 +3,7 @@ module regSoma (reset, enable, CLK, somar);
 	input enable;
 	input CLK;
 	output somar;
-	reg somar;
+	reg somar = 0;
 	always @(posedge CLK)
 		if (enable)
 			somar = enable;

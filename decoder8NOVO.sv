@@ -46,3 +46,28 @@ module outooo (n2, enable, O1);
 	end
 		
 endmodule
+
+module somasub (N1, N2, soma, sub, SOMA1, SOMA2, SUB1, SUB2);
+	input [7:0] N1;
+	input [7:0] N2;
+	input  soma;
+	input sub;
+	output reg [7:0] SOMA1;
+	output reg [7:0] SOMA2;
+	output reg [7:0] SUB1;
+	output reg [7:0] SUB2;
+
+
+	always @(*)	
+		if(soma)
+		begin
+			SOMA1 = N1;
+			SOMA2 = N2;
+		end
+		else
+		begin
+			SUB1 = N1;
+			SUB2 = N2;
+		end
+		
+endmodule

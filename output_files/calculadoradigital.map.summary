@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Dec 06 15:18:15 2018
+Analysis & Synthesis Status : Successful - Thu Dec 06 18:27:54 2018
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : calculadoradigital
 Top-level Entity Name : poha
 Family : Cyclone II
-Total logic elements : 514
-    Total combinational functions : 508
-    Dedicated logic registers : 161
-Total registers : 161
-Total pins : 97
+Total logic elements : 521
+    Total combinational functions : 515
+    Dedicated logic registers : 170
+Total registers : 170
+Total pins : 100
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

@@ -38,10 +38,12 @@ GPIO_1[35] <> teclado:inst1.GPIO_1[35]
 CLOCK_50 => teclado:inst1.CLOCK_50
 CLOCK_50 => reg8:inst6.CLK
 CLOCK_50 => regSoma:inst3.CLK
+CLOCK_50 => regSoma:inst4.CLK
 CLOCK_50 => reg8:inst23.CLK
 CLOCK_50 => pegador:vaitomarnocu.enable
 CLOCK_50 => reg8:inst18.CLK
 CLOCK_50 => reg8:inst24.CLK
+CLOCK_50 => reg8:inst34.CLK
 HEX0[0] <= decoder7:inst29.Out[0]
 HEX0[1] <= decoder7:inst29.Out[1]
 HEX0[2] <= decoder7:inst29.Out[2]
@@ -50,6 +52,7 @@ HEX0[4] <= decoder7:inst29.Out[4]
 HEX0[5] <= decoder7:inst29.Out[5]
 HEX0[6] <= decoder7:inst29.Out[6]
 SW[0] => conversor_teste:inst2.switch
+SW[1] => escolhefinal:inst35.porravaicaralho
 HEX1[0] <= decoder7:inst11.Out[0]
 HEX1[1] <= decoder7:inst11.Out[1]
 HEX1[2] <= decoder7:inst11.Out[2]
@@ -57,20 +60,20 @@ HEX1[3] <= decoder7:inst11.Out[3]
 HEX1[4] <= decoder7:inst11.Out[4]
 HEX1[5] <= decoder7:inst11.Out[5]
 HEX1[6] <= decoder7:inst11.Out[6]
-HEX2[0] <= decoder7:inst25.Out[0]
-HEX2[1] <= decoder7:inst25.Out[1]
-HEX2[2] <= decoder7:inst25.Out[2]
-HEX2[3] <= decoder7:inst25.Out[3]
-HEX2[4] <= decoder7:inst25.Out[4]
-HEX2[5] <= decoder7:inst25.Out[5]
-HEX2[6] <= decoder7:inst25.Out[6]
-HEX3[0] <= decoder7:inst20.Out[0]
-HEX3[1] <= decoder7:inst20.Out[1]
-HEX3[2] <= decoder7:inst20.Out[2]
-HEX3[3] <= decoder7:inst20.Out[3]
-HEX3[4] <= decoder7:inst20.Out[4]
-HEX3[5] <= decoder7:inst20.Out[5]
-HEX3[6] <= decoder7:inst20.Out[6]
+HEX2[0] <= <VCC>
+HEX2[1] <= <VCC>
+HEX2[2] <= <VCC>
+HEX2[3] <= <VCC>
+HEX2[4] <= <VCC>
+HEX2[5] <= <VCC>
+HEX2[6] <= BIN_PARA_BCD_AGORAVAI:inst28.negativo
+HEX3[0] <= <VCC>
+HEX3[1] <= <VCC>
+HEX3[2] <= <VCC>
+HEX3[3] <= <VCC>
+HEX3[4] <= <VCC>
+HEX3[5] <= <VCC>
+HEX3[6] <= <VCC>
 HEX4[0] <= decoder7:inst31.Out[0]
 HEX4[1] <= decoder7:inst31.Out[1]
 HEX4[2] <= decoder7:inst31.Out[2]
@@ -99,6 +102,8 @@ HEX7[3] <= decoder7:inst30.Out[3]
 HEX7[4] <= decoder7:inst30.Out[4]
 HEX7[5] <= decoder7:inst30.Out[5]
 HEX7[6] <= decoder7:inst30.Out[6]
+LEDG[0] <= SUBTRACAO:inst37.teste
+LEDG[1] <= result:inst9.sub
 LEDR[0] <= teclado:inst1.ready
 LEDR[1] <= regSoma:inst3.somar
 LEDR[2] <= pegador:vaitomarnocu.Salvar
@@ -360,6 +365,41 @@ enable => D$latch.LATCH_ENABLE
 D <= D$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|poha|escolhefinal:inst35
+Soma[0] => S.DATAA
+Soma[1] => S.DATAA
+Soma[2] => S.DATAA
+Soma[3] => S.DATAA
+Soma[4] => S.DATAA
+Soma[5] => S.DATAA
+Soma[6] => S.DATAA
+Soma[7] => S.DATAA
+Sub[0] => S.DATAB
+Sub[1] => S.DATAB
+Sub[2] => S.DATAB
+Sub[3] => S.DATAB
+Sub[4] => S.DATAB
+Sub[5] => S.DATAB
+Sub[6] => S.DATAB
+Sub[7] => S.DATAB
+porravaicaralho => S.OUTPUTSELECT
+porravaicaralho => S.OUTPUTSELECT
+porravaicaralho => S.OUTPUTSELECT
+porravaicaralho => S.OUTPUTSELECT
+porravaicaralho => S.OUTPUTSELECT
+porravaicaralho => S.OUTPUTSELECT
+porravaicaralho => S.OUTPUTSELECT
+porravaicaralho => S.OUTPUTSELECT
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |poha|reg8:inst6
 reset => Q.OUTPUTSELECT
 reset => Q.OUTPUTSELECT
@@ -438,12 +478,121 @@ somar <= somar~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |poha|result:inst9
-Escolha[0] => Equal0.IN7
-Escolha[1] => Equal0.IN6
-Escolha[2] => Equal0.IN5
-Escolha[3] => Equal0.IN4
-enable => add$latch.LATCH_ENABLE
+Escolha[0] => Decoder0.IN3
+Escolha[1] => Decoder0.IN2
+Escolha[2] => Decoder0.IN1
+Escolha[3] => Decoder0.IN0
+enable => sub.IN1
+enable => add.IN1
 add <= add$latch.DB_MAX_OUTPUT_PORT_TYPE
+sub <= sub$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|somasub:inst12
+N1[0] => SUB1[0]$latch.DATAIN
+N1[0] => SOMA1[0]$latch.DATAIN
+N1[1] => SUB1[1]$latch.DATAIN
+N1[1] => SOMA1[1]$latch.DATAIN
+N1[2] => SUB1[2]$latch.DATAIN
+N1[2] => SOMA1[2]$latch.DATAIN
+N1[3] => SUB1[3]$latch.DATAIN
+N1[3] => SOMA1[3]$latch.DATAIN
+N1[4] => SUB1[4]$latch.DATAIN
+N1[4] => SOMA1[4]$latch.DATAIN
+N1[5] => SUB1[5]$latch.DATAIN
+N1[5] => SOMA1[5]$latch.DATAIN
+N1[6] => SUB1[6]$latch.DATAIN
+N1[6] => SOMA1[6]$latch.DATAIN
+N1[7] => SUB1[7]$latch.DATAIN
+N1[7] => SOMA1[7]$latch.DATAIN
+N2[0] => SUB2[0]$latch.DATAIN
+N2[0] => SOMA2[0]$latch.DATAIN
+N2[1] => SUB2[1]$latch.DATAIN
+N2[1] => SOMA2[1]$latch.DATAIN
+N2[2] => SUB2[2]$latch.DATAIN
+N2[2] => SOMA2[2]$latch.DATAIN
+N2[3] => SUB2[3]$latch.DATAIN
+N2[3] => SOMA2[3]$latch.DATAIN
+N2[4] => SUB2[4]$latch.DATAIN
+N2[4] => SOMA2[4]$latch.DATAIN
+N2[5] => SUB2[5]$latch.DATAIN
+N2[5] => SOMA2[5]$latch.DATAIN
+N2[6] => SUB2[6]$latch.DATAIN
+N2[6] => SOMA2[6]$latch.DATAIN
+N2[7] => SUB2[7]$latch.DATAIN
+N2[7] => SOMA2[7]$latch.DATAIN
+soma => SOMA2[0]$latch.LATCH_ENABLE
+soma => SOMA2[1]$latch.LATCH_ENABLE
+soma => SOMA2[2]$latch.LATCH_ENABLE
+soma => SOMA2[3]$latch.LATCH_ENABLE
+soma => SOMA2[4]$latch.LATCH_ENABLE
+soma => SOMA2[5]$latch.LATCH_ENABLE
+soma => SOMA2[6]$latch.LATCH_ENABLE
+soma => SOMA2[7]$latch.LATCH_ENABLE
+soma => SOMA1[0]$latch.LATCH_ENABLE
+soma => SOMA1[1]$latch.LATCH_ENABLE
+soma => SOMA1[2]$latch.LATCH_ENABLE
+soma => SOMA1[3]$latch.LATCH_ENABLE
+soma => SOMA1[4]$latch.LATCH_ENABLE
+soma => SOMA1[5]$latch.LATCH_ENABLE
+soma => SOMA1[6]$latch.LATCH_ENABLE
+soma => SOMA1[7]$latch.LATCH_ENABLE
+soma => SUB1[7]$latch.LATCH_ENABLE
+soma => SUB1[6]$latch.LATCH_ENABLE
+soma => SUB1[5]$latch.LATCH_ENABLE
+soma => SUB1[4]$latch.LATCH_ENABLE
+soma => SUB1[3]$latch.LATCH_ENABLE
+soma => SUB1[2]$latch.LATCH_ENABLE
+soma => SUB1[1]$latch.LATCH_ENABLE
+soma => SUB1[0]$latch.LATCH_ENABLE
+soma => SUB2[7]$latch.LATCH_ENABLE
+soma => SUB2[6]$latch.LATCH_ENABLE
+soma => SUB2[5]$latch.LATCH_ENABLE
+soma => SUB2[4]$latch.LATCH_ENABLE
+soma => SUB2[3]$latch.LATCH_ENABLE
+soma => SUB2[2]$latch.LATCH_ENABLE
+soma => SUB2[1]$latch.LATCH_ENABLE
+soma => SUB2[0]$latch.LATCH_ENABLE
+sub => ~NO_FANOUT~
+SOMA1[0] <= SOMA1[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SOMA1[1] <= SOMA1[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SOMA1[2] <= SOMA1[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SOMA1[3] <= SOMA1[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SOMA1[4] <= SOMA1[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SOMA1[5] <= SOMA1[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SOMA1[6] <= SOMA1[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SOMA1[7] <= SOMA1[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SOMA2[0] <= SOMA2[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SOMA2[1] <= SOMA2[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SOMA2[2] <= SOMA2[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SOMA2[3] <= SOMA2[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SOMA2[4] <= SOMA2[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SOMA2[5] <= SOMA2[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SOMA2[6] <= SOMA2[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SOMA2[7] <= SOMA2[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SUB1[0] <= SUB1[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SUB1[1] <= SUB1[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SUB1[2] <= SUB1[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SUB1[3] <= SUB1[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SUB1[4] <= SUB1[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SUB1[5] <= SUB1[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SUB1[6] <= SUB1[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SUB1[7] <= SUB1[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SUB2[0] <= SUB2[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SUB2[1] <= SUB2[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SUB2[2] <= SUB2[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SUB2[3] <= SUB2[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SUB2[4] <= SUB2[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SUB2[5] <= SUB2[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SUB2[6] <= SUB2[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+SUB2[7] <= SUB2[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|regSoma:inst4
+reset => ~NO_FANOUT~
+enable => somar~reg0.DATAIN
+CLK => somar~reg0.CLK
+somar <= somar~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |poha|reg8:inst23
@@ -697,71 +846,79 @@ Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|poha|reg8:inst34
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+reset => Q.OUTPUTSELECT
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+CLK => Q[3]~reg0.CLK
+CLK => Q[4]~reg0.CLK
+CLK => Q[5]~reg0.CLK
+CLK => Q[6]~reg0.CLK
+CLK => Q[7]~reg0.CLK
+D[0] => Q.DATAA
+D[1] => Q.DATAA
+D[2] => Q.DATAA
+D[3] => Q.DATAA
+D[4] => Q.DATAA
+D[5] => Q.DATAA
+D[6] => Q.DATAA
+D[7] => Q.DATAA
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|poha|SUBTRACAO:inst37
+A[0] => Add0.IN16
+A[1] => Add0.IN15
+A[2] => Add0.IN14
+A[3] => Add0.IN13
+A[4] => Add0.IN12
+A[5] => Add0.IN11
+A[6] => Add0.IN10
+A[7] => Add0.IN9
+B[0] => Add0.IN8
+B[1] => Add0.IN7
+B[2] => Add0.IN6
+B[3] => Add0.IN5
+B[4] => Add0.IN4
+B[5] => Add0.IN3
+B[6] => Add0.IN2
+B[7] => Add0.IN1
+S[0] <= S[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= S[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+enable => S[0]$latch.LATCH_ENABLE
+enable => S[1]$latch.LATCH_ENABLE
+enable => S[2]$latch.LATCH_ENABLE
+enable => S[3]$latch.LATCH_ENABLE
+enable => S[4]$latch.LATCH_ENABLE
+enable => S[5]$latch.LATCH_ENABLE
+enable => S[6]$latch.LATCH_ENABLE
+enable => S[7]$latch.LATCH_ENABLE
+enable => teste.DATAIN
+teste <= enable.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |poha|decoder7:inst11
-In[0] => Decoder0.IN3
-In[1] => Decoder0.IN2
-In[2] => Decoder0.IN1
-In[3] => Decoder0.IN0
-Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
-Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
-Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
-Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
-Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
-Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|poha|decoder7:inst25
-In[0] => Decoder0.IN3
-In[1] => Decoder0.IN2
-In[2] => Decoder0.IN1
-In[3] => Decoder0.IN0
-Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
-Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
-Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
-Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
-Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
-Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|poha|BIN_PARA_BCD_AGORAVAI:inst19
-bin[0] => binario.DATAA
-bin[0] => Add0.IN16
-bin[1] => binario[1].DATAA
-bin[1] => Add0.IN15
-bin[2] => binario[2].DATAA
-bin[2] => Add0.IN14
-bin[3] => binario[3].DATAA
-bin[3] => Add0.IN13
-bin[4] => binario[4].DATAA
-bin[4] => Add0.IN12
-bin[5] => binario[5].DATAA
-bin[5] => Add0.IN11
-bin[6] => binario[6].DATAA
-bin[6] => Add0.IN10
-bin[7] => binario[7].OUTPUTSELECT
-bin[7] => binario[6].OUTPUTSELECT
-bin[7] => binario[5].OUTPUTSELECT
-bin[7] => binario[4].OUTPUTSELECT
-bin[7] => binario[3].OUTPUTSELECT
-bin[7] => binario[2].OUTPUTSELECT
-bin[7] => binario[1].OUTPUTSELECT
-bin[7] => binario.OUTPUTSELECT
-bin[7] => Add0.IN9
-bin[7] => negativo.DATAIN
-dezenas[0] <= unidades.DB_MAX_OUTPUT_PORT_TYPE
-dezenas[1] <= dezenas.DB_MAX_OUTPUT_PORT_TYPE
-dezenas[2] <= dezenas.DB_MAX_OUTPUT_PORT_TYPE
-dezenas[3] <= dezenas.DB_MAX_OUTPUT_PORT_TYPE
-unidades[0] <= binario.DB_MAX_OUTPUT_PORT_TYPE
-unidades[1] <= unidades.DB_MAX_OUTPUT_PORT_TYPE
-unidades[2] <= unidades.DB_MAX_OUTPUT_PORT_TYPE
-unidades[3] <= unidades.DB_MAX_OUTPUT_PORT_TYPE
-negativo <= bin[7].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|poha|decoder7:inst20
 In[0] => Decoder0.IN3
 In[1] => Decoder0.IN2
 In[2] => Decoder0.IN1

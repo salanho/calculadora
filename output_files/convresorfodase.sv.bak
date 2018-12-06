@@ -1,0 +1,9 @@
+module conversorfodase(numero);
+	input [7:0] N1;
+	output [7:0] numero;
+	always @(*)	
+		begin
+			numero = !N1 + 1;
+		end
+
+endmodule

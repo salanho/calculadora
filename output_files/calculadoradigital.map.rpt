@@ -1,5 +1,5 @@
 Analysis & Synthesis report for calculadoradigital
-Thu Dec 06 15:18:15 2018
+Thu Dec 06 18:27:54 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -48,16 +48,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Dec 06 15:18:15 2018           ;
+; Analysis & Synthesis Status        ; Successful - Thu Dec 06 18:27:54 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; calculadoradigital                              ;
 ; Top-level Entity Name              ; poha                                            ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 514                                             ;
-;     Total combinational functions  ; 508                                             ;
-;     Dedicated logic registers      ; 161                                             ;
-; Total registers                    ; 161                                             ;
-; Total pins                         ; 97                                              ;
+; Total logic elements               ; 521                                             ;
+;     Total combinational functions  ; 515                                             ;
+;     Dedicated logic registers      ; 170                                             ;
+; Total registers                    ; 170                                             ;
+; Total pins                         ; 100                                             ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -162,24 +162,25 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                          ; Library ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------+---------+
-; soma.v                           ; yes             ; User Verilog HDL File              ; C:/Users/aluno/Desktop/saindo/blocosomateste/blocosomateste/soma.v                    ;         ;
-; decoder7.v                       ; yes             ; User Verilog HDL File              ; C:/Users/aluno/Desktop/saindo/blocosomateste/blocosomateste/decoder7.v                ;         ;
-; teclado.v                        ; yes             ; User Verilog HDL File              ; C:/Users/aluno/Desktop/saindo/blocosomateste/blocosomateste/teclado.v                 ;         ;
-; result.v                         ; yes             ; User Verilog HDL File              ; C:/Users/aluno/Desktop/saindo/blocosomateste/blocosomateste/result.v                  ;         ;
-; reg8.sv                          ; yes             ; User SystemVerilog HDL File        ; C:/Users/aluno/Desktop/saindo/blocosomateste/blocosomateste/reg8.sv                   ;         ;
-; switch.sv                        ; yes             ; User SystemVerilog HDL File        ; C:/Users/aluno/Desktop/saindo/blocosomateste/blocosomateste/switch.sv                 ;         ;
-; output_files/regs.sv             ; yes             ; User SystemVerilog HDL File        ; C:/Users/aluno/Desktop/saindo/blocosomateste/blocosomateste/output_files/regs.sv      ;         ;
-; output_files/mandatela.sv        ; yes             ; User SystemVerilog HDL File        ; C:/Users/aluno/Desktop/saindo/blocosomateste/blocosomateste/output_files/mandatela.sv ;         ;
-; output_files/poha.bdf            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Desktop/saindo/blocosomateste/blocosomateste/output_files/poha.bdf     ;         ;
-; decoder8NOVO.sv                  ; yes             ; User SystemVerilog HDL File        ; C:/Users/aluno/Desktop/saindo/blocosomateste/blocosomateste/decoder8NOVO.sv           ;         ;
-; bin_bcd_pora.sv                  ; yes             ; User SystemVerilog HDL File        ; C:/Users/aluno/Desktop/saindo/blocosomateste/blocosomateste/bin_bcd_pora.sv           ;         ;
-; output_files/memory.sv           ; yes             ; User SystemVerilog HDL File        ; C:/Users/aluno/Desktop/saindo/blocosomateste/blocosomateste/output_files/memory.sv    ;         ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                          ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                ; Library ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------+---------+
+; soma.v                           ; yes             ; User Verilog HDL File              ; C:/Users/aluno/Desktop/saindo/blocosomateste/blocosomateste/soma.v                          ;         ;
+; decoder7.v                       ; yes             ; User Verilog HDL File              ; C:/Users/aluno/Desktop/saindo/blocosomateste/blocosomateste/decoder7.v                      ;         ;
+; teclado.v                        ; yes             ; User Verilog HDL File              ; C:/Users/aluno/Desktop/saindo/blocosomateste/blocosomateste/teclado.v                       ;         ;
+; result.v                         ; yes             ; User Verilog HDL File              ; C:/Users/aluno/Desktop/saindo/blocosomateste/blocosomateste/result.v                        ;         ;
+; reg8.sv                          ; yes             ; User SystemVerilog HDL File        ; C:/Users/aluno/Desktop/saindo/blocosomateste/blocosomateste/reg8.sv                         ;         ;
+; switch.sv                        ; yes             ; User SystemVerilog HDL File        ; C:/Users/aluno/Desktop/saindo/blocosomateste/blocosomateste/switch.sv                       ;         ;
+; output_files/regs.sv             ; yes             ; User SystemVerilog HDL File        ; C:/Users/aluno/Desktop/saindo/blocosomateste/blocosomateste/output_files/regs.sv            ;         ;
+; output_files/mandatela.sv        ; yes             ; User SystemVerilog HDL File        ; C:/Users/aluno/Desktop/saindo/blocosomateste/blocosomateste/output_files/mandatela.sv       ;         ;
+; output_files/poha.bdf            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Desktop/saindo/blocosomateste/blocosomateste/output_files/poha.bdf           ;         ;
+; decoder8NOVO.sv                  ; yes             ; User SystemVerilog HDL File        ; C:/Users/aluno/Desktop/saindo/blocosomateste/blocosomateste/decoder8NOVO.sv                 ;         ;
+; bin_bcd_pora.sv                  ; yes             ; User SystemVerilog HDL File        ; C:/Users/aluno/Desktop/saindo/blocosomateste/blocosomateste/bin_bcd_pora.sv                 ;         ;
+; output_files/memory.sv           ; yes             ; User SystemVerilog HDL File        ; C:/Users/aluno/Desktop/saindo/blocosomateste/blocosomateste/output_files/memory.sv          ;         ;
+; output_files/convresorfodase.sv  ; yes             ; User SystemVerilog HDL File        ; C:/Users/aluno/Desktop/saindo/blocosomateste/blocosomateste/output_files/convresorfodase.sv ;         ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------+
@@ -187,28 +188,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------+
 ; Resource                                    ; Usage    ;
 +---------------------------------------------+----------+
-; Estimated Total logic elements              ; 514      ;
+; Estimated Total logic elements              ; 521      ;
 ;                                             ;          ;
-; Total combinational functions               ; 508      ;
+; Total combinational functions               ; 515      ;
 ; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 174      ;
-;     -- 3 input functions                    ; 172      ;
-;     -- <=2 input functions                  ; 162      ;
+;     -- 4 input functions                    ; 137      ;
+;     -- 3 input functions                    ; 221      ;
+;     -- <=2 input functions                  ; 157      ;
 ;                                             ;          ;
 ; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 366      ;
+;     -- normal mode                          ; 373      ;
 ;     -- arithmetic mode                      ; 142      ;
 ;                                             ;          ;
-; Total registers                             ; 161      ;
-;     -- Dedicated logic registers            ; 161      ;
+; Total registers                             ; 170      ;
+;     -- Dedicated logic registers            ; 170      ;
 ;     -- I/O registers                        ; 0        ;
 ;                                             ;          ;
-; I/O pins                                    ; 97       ;
+; I/O pins                                    ; 100      ;
 ; Embedded Multiplier 9-bit elements          ; 0        ;
 ; Maximum fan-out node                        ; CLOCK_50 ;
-; Maximum fan-out                             ; 162      ;
-; Total fan-out                               ; 2019     ;
-; Average fan-out                             ; 2.64     ;
+; Maximum fan-out                             ; 171      ;
+; Total fan-out                               ; 2016     ;
+; Average fan-out                             ; 2.57     ;
 +---------------------------------------------+----------+
 
 
@@ -217,22 +218,21 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+--------------+
 ; Compilation Hierarchy Node        ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                             ; Library Name ;
 +-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+--------------+
-; |poha                             ; 508 (0)           ; 161 (0)      ; 0           ; 0            ; 0       ; 0         ; 97   ; 0            ; |poha                                           ; work         ;
-;    |BIN_PARA_BCD_AGORAVAI:inst19| ; 38 (38)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|BIN_PARA_BCD_AGORAVAI:inst19              ; work         ;
+; |poha                             ; 515 (0)           ; 170 (0)      ; 0           ; 0            ; 0       ; 0         ; 100  ; 0            ; |poha                                           ; work         ;
 ;    |BIN_PARA_BCD_AGORAVAI:inst21| ; 38 (38)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|BIN_PARA_BCD_AGORAVAI:inst21              ; work         ;
 ;    |BIN_PARA_BCD_AGORAVAI:inst22| ; 38 (38)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|BIN_PARA_BCD_AGORAVAI:inst22              ; work         ;
 ;    |BIN_PARA_BCD_AGORAVAI:inst28| ; 38 (38)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|BIN_PARA_BCD_AGORAVAI:inst28              ; work         ;
 ;    |SOMA:inst|                    ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|SOMA:inst                                 ; work         ;
+;    |SUBTRACAO:inst37|             ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|SUBTRACAO:inst37                          ; work         ;
 ;    |borabora:inst7|               ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|borabora:inst7                            ; work         ;
 ;    |conversor_teste:inst2|        ; 24 (24)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|conversor_teste:inst2                     ; work         ;
 ;    |decoder7:inst11|              ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|decoder7:inst11                           ; work         ;
-;    |decoder7:inst20|              ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|decoder7:inst20                           ; work         ;
-;    |decoder7:inst25|              ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|decoder7:inst25                           ; work         ;
 ;    |decoder7:inst26|              ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|decoder7:inst26                           ; work         ;
 ;    |decoder7:inst27|              ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|decoder7:inst27                           ; work         ;
 ;    |decoder7:inst29|              ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|decoder7:inst29                           ; work         ;
 ;    |decoder7:inst30|              ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|decoder7:inst30                           ; work         ;
 ;    |decoder7:inst31|              ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|decoder7:inst31                           ; work         ;
+;    |escolhefinal:inst35|          ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|escolhefinal:inst35                       ; work         ;
 ;    |mandatela:inst14|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|mandatela:inst14                          ; work         ;
 ;    |number1:inst13|               ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|number1:inst13                            ; work         ;
 ;    |outooo:ADFAD|                 ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|outooo:ADFAD                              ; work         ;
@@ -240,12 +240,15 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;    |reg8:inst18|                  ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|reg8:inst18                               ; work         ;
 ;    |reg8:inst23|                  ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|reg8:inst23                               ; work         ;
 ;    |reg8:inst24|                  ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|reg8:inst24                               ; work         ;
+;    |reg8:inst34|                  ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|reg8:inst34                               ; work         ;
 ;    |reg8:inst6|                   ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|reg8:inst6                                ; work         ;
 ;    |regSoma:inst3|                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|regSoma:inst3                             ; work         ;
-;    |result:inst9|                 ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|result:inst9                              ; work         ;
+;    |regSoma:inst4|                ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|regSoma:inst4                             ; work         ;
+;    |result:inst9|                 ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|result:inst9                              ; work         ;
 ;    |salvamem:inst8|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|salvamem:inst8                            ; work         ;
-;    |teclado:inst1|                ; 228 (0)           ; 128 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|teclado:inst1                             ; work         ;
-;       |controlador:U0|            ; 228 (60)          ; 128 (40)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|teclado:inst1|controlador:U0              ; work         ;
+;    |somasub:inst12|               ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|somasub:inst12                            ; work         ;
+;    |teclado:inst1|                ; 227 (0)           ; 128 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|teclado:inst1                             ; work         ;
+;       |controlador:U0|            ; 227 (59)          ; 128 (40)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|teclado:inst1|controlador:U0              ; work         ;
 ;          |Debouncer:d0|           ; 42 (42)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|teclado:inst1|controlador:U0|Debouncer:d0 ; work         ;
 ;          |Debouncer:d1|           ; 42 (42)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|teclado:inst1|controlador:U0|Debouncer:d1 ; work         ;
 ;          |Debouncer:d2|           ; 42 (42)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |poha|teclado:inst1|controlador:U0|Debouncer:d2 ; work         ;
@@ -283,8 +286,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; conversor_teste:inst2|saida1[4]                     ; SW[0]                               ; yes                    ;
 ; conversor_teste:inst2|saida1[5]                     ; SW[0]                               ; yes                    ;
 ; conversor_teste:inst2|saida1[6]                     ; SW[0]                               ; yes                    ;
+; result:inst9|sub                                    ; result:inst9|sub                    ; yes                    ;
 ; pegador:vaitomarnocu|Salvar                         ; CLOCK_50                            ; yes                    ;
 ; mandatela:inst14|D                                  ; teclado:inst1|controlador:U0|Equal1 ; yes                    ;
+; number1:inst13|Numero1[0]                           ; teclado:inst1|controlador:U0|Equal1 ; yes                    ;
+; number1:inst13|Numero1[1]                           ; teclado:inst1|controlador:U0|Equal1 ; yes                    ;
+; number1:inst13|Numero1[2]                           ; teclado:inst1|controlador:U0|Equal1 ; yes                    ;
+; number1:inst13|Numero1[3]                           ; teclado:inst1|controlador:U0|Equal1 ; yes                    ;
+; result:inst9|add                                    ; result:inst9|add                    ; yes                    ;
+; SOMA:inst|S[0]                                      ; regSoma:inst3|somar                 ; yes                    ;
+; SUBTRACAO:inst37|S[0]                               ; regSoma:inst4|somar                 ; yes                    ;
+; SOMA:inst|S[1]                                      ; regSoma:inst3|somar                 ; yes                    ;
+; SUBTRACAO:inst37|S[1]                               ; regSoma:inst4|somar                 ; yes                    ;
+; SOMA:inst|S[7]                                      ; regSoma:inst3|somar                 ; yes                    ;
+; SUBTRACAO:inst37|S[7]                               ; regSoma:inst4|somar                 ; yes                    ;
+; SOMA:inst|S[2]                                      ; regSoma:inst3|somar                 ; yes                    ;
+; SUBTRACAO:inst37|S[2]                               ; regSoma:inst4|somar                 ; yes                    ;
+; SOMA:inst|S[3]                                      ; regSoma:inst3|somar                 ; yes                    ;
+; SUBTRACAO:inst37|S[3]                               ; regSoma:inst4|somar                 ; yes                    ;
+; SOMA:inst|S[4]                                      ; regSoma:inst3|somar                 ; yes                    ;
+; SUBTRACAO:inst37|S[4]                               ; regSoma:inst4|somar                 ; yes                    ;
+; SOMA:inst|S[5]                                      ; regSoma:inst3|somar                 ; yes                    ;
+; SUBTRACAO:inst37|S[5]                               ; regSoma:inst4|somar                 ; yes                    ;
+; SOMA:inst|S[6]                                      ; regSoma:inst3|somar                 ; yes                    ;
+; SUBTRACAO:inst37|S[6]                               ; regSoma:inst4|somar                 ; yes                    ;
 ; outooo:ADFAD|O1[0]                                  ; salvamem:inst8|Salvar               ; yes                    ;
 ; outooo:ADFAD|O1[1]                                  ; salvamem:inst8|Salvar               ; yes                    ;
 ; outooo:ADFAD|O1[7]                                  ; salvamem:inst8|Salvar               ; yes                    ;
@@ -293,21 +318,40 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; outooo:ADFAD|O1[4]                                  ; salvamem:inst8|Salvar               ; yes                    ;
 ; outooo:ADFAD|O1[5]                                  ; salvamem:inst8|Salvar               ; yes                    ;
 ; outooo:ADFAD|O1[6]                                  ; salvamem:inst8|Salvar               ; yes                    ;
-; number1:inst13|Numero1[0]                           ; teclado:inst1|controlador:U0|Equal1 ; yes                    ;
-; number1:inst13|Numero1[1]                           ; teclado:inst1|controlador:U0|Equal1 ; yes                    ;
-; number1:inst13|Numero1[2]                           ; teclado:inst1|controlador:U0|Equal1 ; yes                    ;
-; number1:inst13|Numero1[3]                           ; teclado:inst1|controlador:U0|Equal1 ; yes                    ;
-; result:inst9|add                                    ; teclado:inst1|controlador:U0|Equal1 ; yes                    ;
-; SOMA:inst|S[0]                                      ; regSoma:inst3|somar                 ; yes                    ;
-; SOMA:inst|S[1]                                      ; regSoma:inst3|somar                 ; yes                    ;
-; SOMA:inst|S[7]                                      ; regSoma:inst3|somar                 ; yes                    ;
-; SOMA:inst|S[2]                                      ; regSoma:inst3|somar                 ; yes                    ;
-; SOMA:inst|S[3]                                      ; regSoma:inst3|somar                 ; yes                    ;
-; SOMA:inst|S[4]                                      ; regSoma:inst3|somar                 ; yes                    ;
-; SOMA:inst|S[5]                                      ; regSoma:inst3|somar                 ; yes                    ;
-; SOMA:inst|S[6]                                      ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SOMA1[0]                             ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SOMA2[0]                             ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SUB2[0]                              ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SUB1[0]                              ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SOMA1[1]                             ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SOMA2[1]                             ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SUB1[1]                              ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SUB2[1]                              ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SOMA1[7]                             ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SOMA2[7]                             ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SOMA1[6]                             ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SOMA2[6]                             ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SOMA1[5]                             ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SOMA2[5]                             ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SOMA1[4]                             ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SOMA2[4]                             ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SOMA1[3]                             ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SOMA2[3]                             ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SOMA1[2]                             ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SOMA2[2]                             ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SUB1[7]                              ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SUB2[7]                              ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SUB1[6]                              ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SUB2[6]                              ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SUB1[5]                              ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SUB2[5]                              ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SUB1[4]                              ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SUB2[4]                              ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SUB1[3]                              ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SUB2[3]                              ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SUB1[2]                              ; regSoma:inst3|somar                 ; yes                    ;
+; somasub:inst12|SUB2[2]                              ; regSoma:inst3|somar                 ; yes                    ;
 ; salvamem:inst8|Salvar                               ; teclado:inst1|controlador:U0|Equal1 ; yes                    ;
-; Number of user-specified and inferred latches = 48  ;                                     ;                        ;
+; Number of user-specified and inferred latches = 89  ;                                     ;                        ;
 +-----------------------------------------------------+-------------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
@@ -317,7 +361,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 161   ;
+; Total registers                              ; 170   ;
 ; Number of registers using Synchronous Clear  ; 32    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -342,11 +386,11 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
-; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |poha|teclado:inst1|controlador:U0|Debouncer:d0|Counter[12] ;
-; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |poha|teclado:inst1|controlador:U0|Debouncer:d1|Counter[12] ;
-; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |poha|teclado:inst1|controlador:U0|Debouncer:d2|Counter[15] ;
-; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |poha|teclado:inst1|controlador:U0|Debouncer:d3|Counter[5]  ;
-; 256:1              ; 4 bits    ; 680 LEs       ; 40 LEs               ; 640 LEs                ; Yes        ; |poha|teclado:inst1|controlador:U0|tecla[3]                 ;
+; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |poha|teclado:inst1|controlador:U0|Debouncer:d0|Counter[8]  ;
+; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |poha|teclado:inst1|controlador:U0|Debouncer:d1|Counter[11] ;
+; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |poha|teclado:inst1|controlador:U0|Debouncer:d2|Counter[12] ;
+; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |poha|teclado:inst1|controlador:U0|Debouncer:d3|Counter[8]  ;
+; 256:1              ; 4 bits    ; 680 LEs       ; 40 LEs               ; 640 LEs                ; Yes        ; |poha|teclado:inst1|controlador:U0|tecla[2]                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
 
 
@@ -401,13 +445,13 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Dec 06 15:18:12 2018
+    Info: Processing started: Thu Dec 06 18:27:51 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off calculadoradigital -c calculadoradigital
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 1 design units, including 1 entities, in source file soma_sub.v
-    Info (12023): Found entity 1: somasub
-Info (12021): Found 1 design units, including 1 entities, in source file soma.v
+Info (12021): Found 0 design units, including 0 entities, in source file soma_sub.v
+Info (12021): Found 2 design units, including 2 entities, in source file soma.v
     Info (12023): Found entity 1: SOMA
+    Info (12023): Found entity 2: SUBTRACAO
 Info (12021): Found 1 design units, including 1 entities, in source file trabcl.bdf
     Info (12023): Found entity 1: trabcl
 Info (12021): Found 1 design units, including 1 entities, in source file decoder7.v
@@ -461,16 +505,21 @@ Info (12021): Found 2 design units, including 2 entities, in source file output_
     Info (12023): Found entity 2: pegamem
 Info (12021): Found 1 design units, including 1 entities, in source file output_files/poha.bdf
     Info (12023): Found entity 1: poha
-Info (12021): Found 2 design units, including 2 entities, in source file decoder8novo.sv
+Info (12021): Found 3 design units, including 3 entities, in source file decoder8novo.sv
     Info (12023): Found entity 1: decoder8NOVO
     Info (12023): Found entity 2: outooo
+    Info (12023): Found entity 3: somasub
 Info (12021): Found 1 design units, including 1 entities, in source file bin_bcd_pora.sv
     Info (12023): Found entity 1: BIN_PARA_BCD_AGORAVAI
 Info (12021): Found 2 design units, including 2 entities, in source file output_files/memory.sv
     Info (12023): Found entity 1: salvamem
     Info (12023): Found entity 2: pegador
+Info (12021): Found 2 design units, including 2 entities, in source file output_files/convresorfodase.sv
+    Info (12023): Found entity 1: conversorfodase
+    Info (12023): Found entity 2: escolhefinal
 Info (12127): Elaborating entity "poha" for the top level hierarchy
 Warning (275011): Block or symbol "decoder7" of instance "inst27" overlaps another block or symbol
+Warning (275011): Block or symbol "reg8" of instance "inst34" overlaps another block or symbol
 Info (12128): Elaborating entity "teclado" for hierarchy "teclado:inst1"
 Info (12128): Elaborating entity "controlador" for hierarchy "teclado:inst1|controlador:U0"
 Info (12128): Elaborating entity "Debouncer" for hierarchy "teclado:inst1|controlador:U0|Debouncer:d0"
@@ -492,6 +541,7 @@ Info (10041): Inferred latch for "Numero[7]" at switch.sv(60)
 Info (12128): Elaborating entity "mandatela" for hierarchy "mandatela:inst14"
 Warning (10240): Verilog HDL Always Construct warning at mandatela.sv(8): inferring latch(es) for variable "D", which holds its previous value in one or more paths through the always construct
 Info (10041): Inferred latch for "D" at mandatela.sv(8)
+Info (12128): Elaborating entity "escolhefinal" for hierarchy "escolhefinal:inst35"
 Info (12128): Elaborating entity "reg8" for hierarchy "reg8:inst6"
 Info (12128): Elaborating entity "SOMA" for hierarchy "SOMA:inst"
 Warning (10240): Verilog HDL Always Construct warning at soma.v(10): inferring latch(es) for variable "S", which holds its previous value in one or more paths through the always construct
@@ -505,8 +555,49 @@ Info (10041): Inferred latch for "S[6]" at soma.v(10)
 Info (10041): Inferred latch for "S[7]" at soma.v(10)
 Info (12128): Elaborating entity "regSoma" for hierarchy "regSoma:inst3"
 Info (12128): Elaborating entity "result" for hierarchy "result:inst9"
-Warning (10240): Verilog HDL Always Construct warning at result.v(8): inferring latch(es) for variable "add", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "add" at result.v(8)
+Warning (10272): Verilog HDL Case Statement warning at result.v(13): case item expression covers a value already covered by a previous case item
+Warning (10272): Verilog HDL Case Statement warning at result.v(15): case item expression covers a value already covered by a previous case item
+Warning (10240): Verilog HDL Always Construct warning at result.v(9): inferring latch(es) for variable "add", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at result.v(9): inferring latch(es) for variable "sub", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "sub" at result.v(9)
+Info (10041): Inferred latch for "add" at result.v(9)
+Info (12128): Elaborating entity "somasub" for hierarchy "somasub:inst12"
+Warning (10240): Verilog HDL Always Construct warning at decoder8NOVO.sv(62): inferring latch(es) for variable "SOMA1", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at decoder8NOVO.sv(62): inferring latch(es) for variable "SOMA2", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at decoder8NOVO.sv(62): inferring latch(es) for variable "SUB1", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at decoder8NOVO.sv(62): inferring latch(es) for variable "SUB2", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "SUB2[0]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SUB2[1]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SUB2[2]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SUB2[3]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SUB2[4]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SUB2[5]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SUB2[6]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SUB2[7]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SUB1[0]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SUB1[1]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SUB1[2]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SUB1[3]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SUB1[4]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SUB1[5]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SUB1[6]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SUB1[7]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SOMA2[0]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SOMA2[1]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SOMA2[2]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SOMA2[3]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SOMA2[4]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SOMA2[5]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SOMA2[6]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SOMA2[7]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SOMA1[0]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SOMA1[1]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SOMA1[2]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SOMA1[3]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SOMA1[4]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SOMA1[5]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SOMA1[6]" at decoder8NOVO.sv(69)
+Info (10041): Inferred latch for "SOMA1[7]" at decoder8NOVO.sv(69)
 Info (12128): Elaborating entity "conversor_teste" for hierarchy "conversor_teste:inst2"
 Info (10041): Inferred latch for "saida2[0]" at switch.sv(18)
 Info (10041): Inferred latch for "saida2[1]" at switch.sv(18)
@@ -551,6 +642,16 @@ Info (10041): Inferred latch for "O1[7]" at decoder8NOVO.sv(41)
 Info (12128): Elaborating entity "salvamem" for hierarchy "salvamem:inst8"
 Warning (10240): Verilog HDL Always Construct warning at memory.sv(8): inferring latch(es) for variable "Salvar", which holds its previous value in one or more paths through the always construct
 Info (10041): Inferred latch for "Salvar" at memory.sv(8)
+Info (12128): Elaborating entity "SUBTRACAO" for hierarchy "SUBTRACAO:inst37"
+Warning (10240): Verilog HDL Always Construct warning at soma.v(28): inferring latch(es) for variable "S", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "S[0]" at soma.v(34)
+Info (10041): Inferred latch for "S[1]" at soma.v(34)
+Info (10041): Inferred latch for "S[2]" at soma.v(34)
+Info (10041): Inferred latch for "S[3]" at soma.v(34)
+Info (10041): Inferred latch for "S[4]" at soma.v(34)
+Info (10041): Inferred latch for "S[5]" at soma.v(34)
+Info (10041): Inferred latch for "S[6]" at soma.v(34)
+Info (10041): Inferred latch for "S[7]" at soma.v(34)
 Warning (13034): The following nodes have both tri-state and non-tri-state drivers
     Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[25]" and its non-tri-state driver.
     Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_1[23]" and its non-tri-state driver.
@@ -589,21 +690,39 @@ Warning (13039): The following bidir pins have no drivers
     Warning (13040): Bidir "GPIO_1" has no driver
     Warning (13040): Bidir "GPIO_1" has no driver
     Warning (13040): Bidir "GPIO_1" has no driver
+Warning (13012): Latch result:inst9|sub has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal teclado:inst1|controlador:U0|tecla[0]
+Warning (13012): Latch result:inst9|add has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal teclado:inst1|controlador:U0|tecla[0]
 Warning (13009): TRI or OPNDRN buffers permanently enabled
     Warning (13010): Node "GPIO_1~synth"
     Warning (13010): Node "GPIO_1~synth"
     Warning (13010): Node "GPIO_1~synth"
     Warning (13010): Node "GPIO_1~synth"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX2[5]" is stuck at VCC
+    Warning (13410): Pin "HEX2[4]" is stuck at VCC
+    Warning (13410): Pin "HEX2[3]" is stuck at VCC
+    Warning (13410): Pin "HEX2[2]" is stuck at VCC
+    Warning (13410): Pin "HEX2[1]" is stuck at VCC
+    Warning (13410): Pin "HEX2[0]" is stuck at VCC
+    Warning (13410): Pin "HEX3[6]" is stuck at VCC
+    Warning (13410): Pin "HEX3[5]" is stuck at VCC
+    Warning (13410): Pin "HEX3[4]" is stuck at VCC
+    Warning (13410): Pin "HEX3[3]" is stuck at VCC
+    Warning (13410): Pin "HEX3[2]" is stuck at VCC
+    Warning (13410): Pin "HEX3[1]" is stuck at VCC
+    Warning (13410): Pin "HEX3[0]" is stuck at VCC
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 644 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 59 output pins
+Info (21057): Implemented 663 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 61 output pins
     Info (21060): Implemented 36 bidirectional pins
-    Info (21061): Implemented 547 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 56 warnings
+    Info (21061): Implemented 563 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 83 warnings
     Info: Peak virtual memory: 4624 megabytes
-    Info: Processing ended: Thu Dec 06 15:18:15 2018
+    Info: Processing ended: Thu Dec 06 18:27:54 2018
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 

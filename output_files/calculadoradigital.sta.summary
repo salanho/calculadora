@@ -3,56 +3,64 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'CLOCK_50'
-Slack : -4.129
-TNS   : -430.922
-
-Type  : Slow Model Setup 'SW[0]'
-Slack : -2.525
-TNS   : -32.099
-
-Type  : Slow Model Setup 'regSoma:inst3|somar'
-Slack : -2.371
-TNS   : -16.195
+Slack : -4.120
+TNS   : -429.988
 
 Type  : Slow Model Setup 'teclado:inst1|controlador:U0|Debouncer:d0|State'
-Slack : -1.919
-TNS   : -9.256
+Slack : -3.509
+TNS   : -20.711
+
+Type  : Slow Model Setup 'regSoma:inst4|somar'
+Slack : -3.187
+TNS   : -20.524
+
+Type  : Slow Model Setup 'regSoma:inst3|somar'
+Slack : -2.867
+TNS   : -43.353
+
+Type  : Slow Model Setup 'SW[0]'
+Slack : -2.794
+TNS   : -31.373
 
 Type  : Slow Model Setup 'salvamem:inst8|Salvar'
-Slack : -1.298
-TNS   : -6.174
+Slack : -2.491
+TNS   : -17.833
 
 Type  : Slow Model Setup 'mandatela:inst14|D'
-Slack : -1.208
-TNS   : -8.258
+Slack : -1.734
+TNS   : -10.953
 
 Type  : Slow Model Hold 'CLOCK_50'
 Slack : -2.535
-TNS   : -29.927
+TNS   : -34.549
 
-Type  : Slow Model Hold 'salvamem:inst8|Salvar'
-Slack : 0.239
-TNS   : 0.000
-
-Type  : Slow Model Hold 'teclado:inst1|controlador:U0|Debouncer:d0|State'
-Slack : 0.617
+Type  : Slow Model Hold 'regSoma:inst3|somar'
+Slack : 0.167
 TNS   : 0.000
 
 Type  : Slow Model Hold 'SW[0]'
-Slack : 0.888
+Slack : 0.724
 TNS   : 0.000
 
 Type  : Slow Model Hold 'mandatela:inst14|D'
-Slack : 0.898
+Slack : 0.791
 TNS   : 0.000
 
-Type  : Slow Model Hold 'regSoma:inst3|somar'
-Slack : 0.952
+Type  : Slow Model Hold 'regSoma:inst4|somar'
+Slack : 1.114
+TNS   : 0.000
+
+Type  : Slow Model Hold 'teclado:inst1|controlador:U0|Debouncer:d0|State'
+Slack : 1.648
+TNS   : 0.000
+
+Type  : Slow Model Hold 'salvamem:inst8|Salvar'
+Slack : 1.838
 TNS   : 0.000
 
 Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
 Slack : -1.380
-TNS   : -162.380
+TNS   : -171.380
 
 Type  : Slow Model Minimum Pulse Width 'SW[0]'
 Slack : -1.380
@@ -66,6 +74,10 @@ Type  : Slow Model Minimum Pulse Width 'regSoma:inst3|somar'
 Slack : 0.500
 TNS   : 0.000
 
+Type  : Slow Model Minimum Pulse Width 'regSoma:inst4|somar'
+Slack : 0.500
+TNS   : 0.000
+
 Type  : Slow Model Minimum Pulse Width 'salvamem:inst8|Salvar'
 Slack : 0.500
 TNS   : 0.000
@@ -74,57 +86,65 @@ Type  : Slow Model Minimum Pulse Width 'teclado:inst1|controlador:U0|Debouncer:d
 Slack : 0.500
 TNS   : 0.000
 
-Type  : Fast Model Setup 'CLOCK_50'
-Slack : -1.474
-TNS   : -136.117
-
-Type  : Fast Model Setup 'SW[0]'
-Slack : -0.914
-TNS   : -9.944
-
-Type  : Fast Model Setup 'regSoma:inst3|somar'
-Slack : -0.865
-TNS   : -5.666
-
 Type  : Fast Model Setup 'teclado:inst1|controlador:U0|Debouncer:d0|State'
-Slack : -0.684
-TNS   : -2.916
+Slack : -1.649
+TNS   : -7.700
+
+Type  : Fast Model Setup 'CLOCK_50'
+Slack : -1.473
+TNS   : -140.443
+
+Type  : Fast Model Setup 'regSoma:inst4|somar'
+Slack : -1.107
+TNS   : -6.425
 
 Type  : Fast Model Setup 'salvamem:inst8|Salvar'
-Slack : -0.450
-TNS   : -1.638
+Slack : -0.996
+TNS   : -7.045
+
+Type  : Fast Model Setup 'SW[0]'
+Slack : -0.881
+TNS   : -8.790
+
+Type  : Fast Model Setup 'regSoma:inst3|somar'
+Slack : -0.641
+TNS   : -8.017
 
 Type  : Fast Model Setup 'mandatela:inst14|D'
-Slack : -0.345
-TNS   : -2.240
+Slack : -0.593
+TNS   : -3.422
 
 Type  : Fast Model Hold 'CLOCK_50'
-Slack : -1.577
-TNS   : -31.085
+Slack : -1.578
+TNS   : -32.357
+
+Type  : Fast Model Hold 'regSoma:inst3|somar'
+Slack : 0.239
+TNS   : 0.000
 
 Type  : Fast Model Hold 'SW[0]'
-Slack : 0.504
+Slack : 0.412
 TNS   : 0.000
 
-Type  : Fast Model Hold 'salvamem:inst8|Salvar'
-Slack : 0.546
-TNS   : 0.000
-
-Type  : Fast Model Hold 'teclado:inst1|controlador:U0|Debouncer:d0|State'
-Slack : 0.683
+Type  : Fast Model Hold 'regSoma:inst4|somar'
+Slack : 0.735
 TNS   : 0.000
 
 Type  : Fast Model Hold 'mandatela:inst14|D'
-Slack : 0.800
+Slack : 0.742
 TNS   : 0.000
 
-Type  : Fast Model Hold 'regSoma:inst3|somar'
-Slack : 0.805
+Type  : Fast Model Hold 'teclado:inst1|controlador:U0|Debouncer:d0|State'
+Slack : 1.018
+TNS   : 0.000
+
+Type  : Fast Model Hold 'salvamem:inst8|Salvar'
+Slack : 1.277
 TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
 Slack : -1.380
-TNS   : -162.380
+TNS   : -171.380
 
 Type  : Fast Model Minimum Pulse Width 'SW[0]'
 Slack : -1.380
@@ -135,6 +155,10 @@ Slack : 0.500
 TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'regSoma:inst3|somar'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'regSoma:inst4|somar'
 Slack : 0.500
 TNS   : 0.000
 
